@@ -1,0 +1,27 @@
+# docker-composeは複数のコンテナを操作するコマンド
+# docker-compose.ymlはdocker-composeのもとになる設計書の役割を果たす
+
+# docker-composeパッケージのバージョン
+version: "3"
+
+services:
+  # dbサーバーコンテナを起動
+  # db:
+  #   # イメージはdockerhub上のmysql:latestを使用
+  #   image: mysql:latest
+
+  # webサーバーコンテナを起動
+  web:
+    # .Dockerファイルにあるdockerfileからimage作成
+    build: ./.docker
+    # コンテナ起動時に実行されるコマンドを指定
+    command: echo 'ABCD'
+    # currentディレクトリを/appディレクトリにbind mountする
+    # volumes:
+    #   - .:/app 
+    # コンテナの8000番を公開
+    ports:
+      - "3000:3000" 
+    # # webサーバーコンテナを立ち上げる前にdbサーバーコンテナを立ち上げるようにする
+    # depends_on: 
+    #   - db 
