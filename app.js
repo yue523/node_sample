@@ -16,14 +16,14 @@ app.use(express.static('public'));
 
 // ルーティング:ルートURLで表示する
 // https://expressjs.com/ja/guide/routing.html
-app.get('/', (req, res) => {
-  // top.ejsの読み込み
-  res.render('top.ejs');
-});
+// app.get('/', (req, res) => {
+//   // top.ejsの読み込み
+//   res.render('top.ejs');
+// });
 
 // ルーティング:ルートURLで表示する
 // https://expressjs.com/ja/guide/routing.html
-app.get('/index', (req, res) => {
+app.get('/', (req, res) => {
   // index.ejsの読み込み
   res.render('index.ejs');
 });
