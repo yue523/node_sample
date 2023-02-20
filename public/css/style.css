@@ -16,7 +16,8 @@ body {
   color: #6c7686;
 }
 
-ul, li {
+ul,
+li {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -34,7 +35,13 @@ a:hover {
 }
 
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
 
@@ -86,7 +93,8 @@ h1 {
   text-align: center;
   line-height: 45px;
   font-weight: 600;
-  color: #42cea9;;
+  color: #42cea9;
+  ;
   background-color: #ffffff;
   border: 2px solid #58d2b2;
   border-radius: 2px;
@@ -94,7 +102,7 @@ h1 {
 
 .top-detail .index-button:hover {
   color: #ffffff;
-  background-color:  #58d2b2;
+  background-color: #58d2b2;
 }
 
 
