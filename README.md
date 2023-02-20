@@ -1,9 +1,9 @@
 # node_sample
 
 ## 環境
-・docker
-・node
-・express
+1. docker
+2. node
+3. express
 
 ## 現在行っていること
 
