@@ -16,7 +16,7 @@ app.use(express.static('public'));
 
 // ルーティング:ルートURLで表示する
 // https://expressjs.com/ja/guide/routing.html
-app.get('/test', (req, res) => {
+app.get('/', (req, res) => {
   // top.ejsの読み込み
   res.render('test.ejs');
 });
