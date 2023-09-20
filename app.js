@@ -28,5 +28,5 @@ app.get('/', (req, res) => {
 //   res.render('index.ejs');
 // });
 
-// ポート3000を尋ねる
+// ポート3000でアプリを開く
 app.listen(3000);
